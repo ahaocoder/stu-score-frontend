@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="base.css">
+    <script src="base.js"></script>
+    <title>班级学生成绩管理系统</title>
+</head>
+<body>
+<header class="header">
+    <div class="top">
+        <img class="logo" src="asset/logo.png" alt="logo">
+        <span>班级学生成绩管理系统</span>
+    </div>
+    <nav class="nav">
+        <ul class="nav-list">
+            <li><a class="index" href="index.html">首页</a></li>
+            <li id="grade" onclick="gradeClick()">
+                班级管理▼
+                <div id="grade-dropdown">
+                    <!-- 下拉框内容 -->
+                    <p>
+                        <a href="scores.html">学生成绩概览</a>
+                    </p>
+                    <p>
+                        <a href="grade.html">班级学习情况</a>
+                    </p>
+                </div>
+            </li>
+            <li id="school" onclick="schoolClick()">
+                校园风采▼
+                <div id="school-dropdown">
+                    <!-- 下拉框内容 -->
+                    <p>
+                        <a href="campus.html">校园风光</a>
+                    </p>
+                    <p>
+                        <a href="alumnus.html">校友风采</a>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+    <div class="campus-top">
+        <h1 class="campus-title">校园风光</h1>
+    </div>
+    <div class="campus-main">
+        <img src="asset/alumnus1.png" alt="一">
+        <img src="asset/alumnus2.png" alt="二">
+        <img src="asset/alumnus3.png" alt="三">
+        <img src="asset/alumnus4.png" alt="四">
+    </div>
+</main>
+<footer class="footer">
+    <div class="footer-text">
+        <p>地址：浙江省杭州市余杭塘路2318号</p>
+        <p>邮编：311121</p>
+        <p>联系电话：0571-28865012</p>
+    </div>
+    <div class="footer-img">
+        <img src="asset/img.png" alt="学校大标">
+    </div>
+</footer>
+</body>
+<style>
+    .campus-top {
+        width: 100%;
+        border-bottom: #e9f3fc 5px solid;
+        margin: 10px 0;
+    }
+
+    .campus-title {
+        color: #3474c5;
+    }
+</style>
+</html>

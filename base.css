@@ -1,0 +1,122 @@
+body {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.top {
+    height: 73px;
+    background: #c5e1f8;
+    display: flex;
+    /*justify-content: center; !* 在主轴上居中 *!*/
+    align-items: center; /* 在交叉轴上居中 */
+}
+
+.logo {
+    margin: 0 10px;
+}
+
+.nav {
+    height: 50px;
+    border-bottom: #d5d1d1 1px solid;
+    display: flex; /* 添加这行以启用 Flexbox 布局 */
+    justify-content: center; /* 在主轴上居中 */
+    align-items: center; /* 在交叉轴上居中 */
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav-list li {
+    margin: 30px;
+    position: relative;
+}
+
+.nav-list li:hover {
+    color: #4db1b1;
+    cursor: pointer; /* 设置光标为小手 */
+}
+
+.index{
+    text-decoration: none; /* 移除下划线 */
+}
+
+.index:hover{
+    color: #4db1b1;
+    cursor: pointer; /* 设置光标为小手 */
+}
+
+.index:visited{
+    color: black;
+}
+
+#grade-dropdown {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 114px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#grade-dropdown a {
+    text-decoration: none; /* 移除下划线 */
+    color: black /* 你想要的下拉框内链接的颜色 */;
+}
+
+#grade-dropdown a:hover {
+    color: #c5e1f8;
+}
+
+#school-dropdown {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 114px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#school-dropdown a {
+    text-decoration: none; /* 移除下划线 */
+    color: black;
+}
+
+#school-dropdown a:hover {
+    color: #c5e1f8;
+}
+
+.footer {
+    background: #c5e1f8;
+    height: 150px;
+    position: relative;
+    margin-top: auto; /* 将 footer 推到最底部 */
+}
+
+.footer-text,
+.footer-img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer-text {
+    left: 20%;
+}
+
+.footer-img {
+    right: 20%;
+}
