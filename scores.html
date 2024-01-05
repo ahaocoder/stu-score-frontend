@@ -15,15 +15,16 @@
     </div>
     <nav class="nav">
         <ul class="nav-list">
+            <li><a class="index" href="index.html">首页</a></li>
             <li id="grade" onclick="gradeClick()">
                 班级管理▼
                 <div id="grade-dropdown">
                     <!-- 下拉框内容 -->
                     <p>
-                        <a href="https://www.baidu.com">学生成绩概览</a>
+                        <a href="scores.html">学生成绩概览</a>
                     </p>
                     <p>
-                        <a href="https://www.baidu.com">班级学习情况</a>
+                        <a href="grade.html">班级学习情况</a>
                     </p>
                 </div>
             </li>
@@ -32,20 +33,18 @@
                 <div id="school-dropdown">
                     <!-- 下拉框内容 -->
                     <p>
-                        <a href="https://www.baidu.com">学生成绩概览</a>
+                        <a href="campus.html">校园风光</a>
                     </p>
                     <p>
-                        <a href="https://www.baidu.com">班级学习情况</a>
+                        <a href="alumnus.html">校友风采</a>
                     </p>
                 </div>
             </li>
         </ul>
-        <div class="login">登录</div>
     </nav>
 </header>
 <main class="main">
-    <h1>hello world</h1>
-    <p>真是一场酣畅淋漓的开发！777777</p>
+    <img class="index-img" src="asset/index_img.png" alt="学校" />
 </main>
 <footer class="footer">
     <div class="footer-text">
@@ -58,4 +57,12 @@
     </div>
 </footer>
 </body>
+<style>
+    .index-img{
+        width: 100%; /* 设置图片宽度为视口宽度 */
+        height: 100%; /* 保持宽高比，确保图片不变形 */
+        display: block; /* 去除默认行内元素的间距 */
+        margin: 50px auto; /* 去除默认外边距 */
+    }
+</style>
 </html>

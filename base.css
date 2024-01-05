@@ -42,16 +42,16 @@ body {
     cursor: pointer; /* 设置光标为小手 */
 }
 
-.index{
+.index {
     text-decoration: none; /* 移除下划线 */
 }
 
-.index:hover{
+.index:hover {
     color: #4db1b1;
     cursor: pointer; /* 设置光标为小手 */
 }
 
-.index:visited{
+.index:visited {
     color: black;
 }
 
