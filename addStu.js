@@ -65,13 +65,14 @@ function addStudent() {
 
 function clearForm() {
     // Clear the values in the form
-    document.getElementById('stuNum').value = '';
-    document.getElementById('name').value = '';
-    document.getElementById('math').value = '';
-    document.getElementById('chinese').value = '';
-    document.getElementById('english').value = '';
-    document.getElementById('frontend').value = '';
-
-    // Hide the form
-    document.getElementById('addStudentForm').style.display = 'none';
+    // document.getElementById('stuNum').value = '';
+    // document.getElementById('name').value = '';
+    // document.getElementById('math').value = '';
+    // document.getElementById('chinese').value = '';
+    // document.getElementById('english').value = '';
+    // document.getElementById('frontend').value = '';
+    //
+    // // Hide the form
+    // document.getElementById('addStudentForm').style.display = 'none';
+    window.location.reload()
 }

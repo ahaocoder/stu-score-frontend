@@ -7,6 +7,7 @@
     <script src="base.js"></script>
     <script src="getAllScores.js"></script>
     <script src="addStu.js"></script>
+    <script src="delStu.js"></script>
     <title>班级学生成绩管理系统</title>
 </head>
 <body>
@@ -59,19 +60,20 @@
         <label for="name">姓名:</label>
         <input type="text" id="name" name="name">
 
-        <label for="math">数学:</label>
+        <label for="math">数学成绩:</label>
         <input type="text" id="math" name="math">
 
-        <label for="chinese">语文:</label>
+        <label for="chinese">语文成绩:</label>
         <input type="text" id="chinese" name="chinese">
 
-        <label for="english">英语:</label>
+        <label for="english">英语成绩:</label>
         <input type="text" id="english" name="english">
 
         <label for="frontend">前端成绩:</label>
         <input type="text" id="frontend" name="frontend">
 
         <button type="button" onclick="addStudent()">添加</button>
+        <button id="openDeleteFormBtn">删除学生</button>
     </form>
     <table id="data-table">
         <thead>
@@ -89,6 +91,11 @@
         <!-- Table rows will be dynamically added here -->
         </tbody>
     </table>
+    <form id="deleteStudentForm">
+        <label for="deleteStuNum">学号:</label>
+        <input type="text" id="deleteStuNum" name="deleteStuNum">
+        <button type="button" onclick="deleteStudent()">删除</button>
+    </form>
 </main>
 <footer class="footer">
     <div class="footer-text">
