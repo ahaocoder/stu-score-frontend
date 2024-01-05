@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="base.css">
     <script src="base.js"></script>
+    <script src="getAllScores.js"></script>
+    <script src="addStu.js"></script>
     <title>班级学生成绩管理系统</title>
 </head>
 <body>
+
 <header class="header">
     <div class="top">
         <img class="logo" src="asset/logo.png" alt="logo">
@@ -44,7 +47,48 @@
     </nav>
 </header>
 <main class="main">
-    <img class="index-img" src="asset/index_img.png" alt="学校" />
+    <div class="campus-top">
+        <h1 class="campus-title">学生成绩概览</h1>
+    </div>
+    <button id="openFormBtn">添加学生</button>
+
+    <form id="addStudentForm">
+        <label for="stuNum">学号:</label>
+        <input type="text" id="stuNum" name="stuNum">
+
+        <label for="name">姓名:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="math">数学:</label>
+        <input type="text" id="math" name="math">
+
+        <label for="chinese">语文:</label>
+        <input type="text" id="chinese" name="chinese">
+
+        <label for="english">英语:</label>
+        <input type="text" id="english" name="english">
+
+        <label for="frontend">前端成绩:</label>
+        <input type="text" id="frontend" name="frontend">
+
+        <button type="button" onclick="addStudent()">添加</button>
+    </form>
+    <table id="data-table">
+        <thead>
+        <tr>
+            <th>学号</th>
+            <th>姓名</th>
+            <th>数学</th>
+            <th>语文</th>
+            <th>英语</th>
+            <th>前端</th>
+            <!-- Add more columns as needed -->
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Table rows will be dynamically added here -->
+        </tbody>
+    </table>
 </main>
 <footer class="footer">
     <div class="footer-text">
@@ -58,11 +102,18 @@
 </footer>
 </body>
 <style>
-    .index-img{
-        width: 100%; /* 设置图片宽度为视口宽度 */
-        height: 100%; /* 保持宽高比，确保图片不变形 */
-        display: block; /* 去除默认行内元素的间距 */
-        margin: 50px auto; /* 去除默认外边距 */
+    .campus-top {
+        width: 100%;
+        border-bottom: #e9f3fc 5px solid;
+        margin: 10px 0;
+    }
+
+    .campus-title {
+        color: #3474c5;
+    }
+
+    #addStudentForm {
+        display: none;
     }
 </style>
 </html>
