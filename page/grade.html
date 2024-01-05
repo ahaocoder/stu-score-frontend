@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="base.css">
-    <script src="api/base.js"></script>
+    <link rel="stylesheet" href="../style/base.css">
+    <script src="../api/base.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>班级学生成绩管理系统</title>
 </head>
 <body>
 <header class="header">
     <div class="top">
-        <img class="logo" src="asset/logo.png" alt="logo">
+        <img class="logo" src="../asset/logo.png" alt="logo">
         <span>班级学生成绩管理系统</span>
     </div>
     <nav class="nav">
         <ul class="nav-list">
-            <li><a class="index" href="index.html">首页</a></li>
+            <li><a class="index" href="../index.html">首页</a></li>
             <li id="grade" onclick="gradeClick()">
                 班级管理▼
                 <div id="grade-dropdown">
@@ -44,7 +45,12 @@
     </nav>
 </header>
 <main class="main">
-    <img class="index-img" src="asset/index_img.png" alt="学校" />
+    <div class="campus-top">
+        <h1 class="campus-title">班级学习情况</h1>
+    </div>
+    <canvas id="barChart"></canvas>
+
+    <script src="../api/script.js"></script>
 </main>
 <footer class="footer">
     <div class="footer-text">
@@ -53,16 +59,24 @@
         <p>联系电话：0571-28865012</p>
     </div>
     <div class="footer-img">
-        <img src="asset/img.png" alt="学校大标">
+        <img src="../asset/img.png" alt="学校大标">
     </div>
 </footer>
 </body>
 <style>
-    .index-img{
-        width: 100%; /* 设置图片宽度为视口宽度 */
-        height: 100%; /* 保持宽高比，确保图片不变形 */
-        display: block; /* 去除默认行内元素的间距 */
-        margin: 50px auto; /* 去除默认外边距 */
+    .campus-top {
+        width: 100%;
+        border-bottom: #e9f3fc 5px solid;
+        margin: 10px 0;
+    }
+
+    .campus-title {
+        color: #3474c5;
+    }
+
+    canvas {
+        max-width: 600px;
+        margin: 20px;
     }
 </style>
 </html>
